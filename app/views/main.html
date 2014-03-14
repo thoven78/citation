@@ -1,0 +1,67 @@
+<div class="row marketing">
+  <h4>Small Citation</h4>
+  <form class="form-horizontal" role="form" ng-submit="formatCitation()">
+    <div class="form-group">
+      <label class="control-label col-sm-2" for="firstname">Fisrtname</label>
+      <div class="col-sm-10">
+        <input type="text" class="form-control" id="firstname" placeholder="Author's FirstName" ng-model="firstname" required>
+      </div>
+    </div>
+    <div class="form-group">
+      <label class="control-label col-sm-2" for="middlename">Middle</label>
+      <div class="col-sm-10">
+        <input type="text" class="form-control" id="middlename" placeholder="Author's Middle Name" ng-model="middle" required>
+      </div>
+    </div>
+    <div class="form-group">
+      <label class="control-label col-sm-2" for="lastname">LastName</label>
+      <div class="col-sm-10">
+        <input type="text" class="form-control" id="lastname" placeholder="Author's LastName" ng-model="lastname" required>
+      </div>
+    </div>
+    <div class="form-group">
+      <label class="control-label col-sm-2" for="bookTitle">Book Title</label>
+      <div class="col-sm-10">
+        <input type="text" class="form-control" id="bookTitle" placeholder="Book Title" ng-model="bookTitle" required>
+      </div>
+    </div>
+    <div class="form-group">
+      <label class="control-label col-sm-2" for="publisher">Publisher</label>
+      <div class="col-sm-10">
+        <input type="text" class="form-control" id="publisher" placeholder="Publisher" ng-model="publisher" required>
+      </div>
+    </div>
+    <div class="form-group">
+      <label class="control-label col-sm-2" for="city-of-publication">City of Publication</label>
+      <div class="col-sm-10">
+        <input type="text" class="form-control" id="city-of-publication" placeholder="City of publication" ng-model="cityOfPublication" required>
+      </div>
+    </div>
+    <div class="form-group">
+      <label class="control-label col-sm-2" for="year-of-publication">Year of Publication</label>
+      <div class="col-sm-10">
+        <input type="text" class="form-control" id="year-of-publication" placeholder="Year Of publication" ng-model="yearOfPublication" required>
+      </div>
+    </div>
+    <div class="form-group">
+      <label class="control-label col-sm-2" for="page-number">Page numbers</label>
+      <div class="row">
+        <div class="col-xs-3">
+          <input type="text" class="form-control" id="page-start" placeholder="Start" ng-model="pageStart" required>
+        </div>
+        <div class="col-xs-3">
+          <input type="text" class="form-control" id="page-start" placeholder="End" ng-model="pageEnd" required>
+        </div>
+      </div>
+    </div>
+    <button type="submit" class="btn btn-primary">Save</button>
+  </form>
+</div>
+
+<div class="row marketing">
+  <p ng-repeat="citation in citations">{{ citation }}</p>
+</div>
+
+<div class="footer">
+  <p>♥ from the Yeoman team</p>
+</div>
